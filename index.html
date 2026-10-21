@@ -43,24 +43,30 @@
                     LM
                 </div>
                 <div>
-                    <span class="block font-bold text-lg text-slate-900 leading-tight">Louis Masse</span>
-                    <span class="block text-xs font-medium text-blue-600">Gestion & Stratégie du Sport</span>
+                    <span class="block font-bold text-lg text-slate-900 leading-tight" data-fr="Louis Masse" data-en="Louis Masse">Louis Masse</span>
+                    <span class="block text-xs font-medium text-blue-600" data-fr="Gestion & Stratégie du Sport" data-en="Sport Management & Strategy">Gestion & Stratégie du Sport</span>
                 </div>
             </a>
             
             <nav class="hidden md:flex items-center gap-6 font-medium text-sm text-slate-600">
-                <a href="#accueil" class="hover:text-blue-600 transition-colors">Accueil</a>
-                <a href="#experiences" class="hover:text-blue-600 transition-colors">Expériences</a>
-                <a href="#diplomes" class="hover:text-blue-600 transition-colors">Diplômes</a>
-                <a href="#engagement" class="hover:text-blue-600 transition-colors">Engagement</a>
-                <a href="#competences" class="hover:text-blue-600 transition-colors">Compétences</a>
-                <a href="#phototheque" class="hover:text-blue-600 transition-colors">Photothèque</a>
+                <a href="#accueil" class="hover:text-blue-600 transition-colors" data-fr="Accueil" data-en="Home">Accueil</a>
+                <a href="#experiences" class="hover:text-blue-600 transition-colors" data-fr="Expériences" data-en="Experience">Expériences</a>
+                <a href="#diplomes" class="hover:text-blue-600 transition-colors" data-fr="Diplômes" data-en="Education">Diplômes</a>
+                <a href="#engagement" class="hover:text-blue-600 transition-colors" data-fr="Engagement" data-en="Involvement">Engagement</a>
+                <a href="#competences" class="hover:text-blue-600 transition-colors" data-fr="Compétences" data-en="Skills">Compétences</a>
+                <a href="#phototheque" class="hover:text-blue-600 transition-colors" data-fr="Photothèque" data-en="Gallery">Photothèque</a>
             </nav>
 
-            <div class="hidden md:block">
-                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-blue-600 text-white font-semibold text-sm shadow-lg shadow-blue-500/20 hover:bg-blue-700 transition-all">
-                    Me contacter
-                </a>
+            <div class="flex items-center gap-4">
+                <!-- Bouton Traduction FR/EN -->
+                <button onclick="toggleLanguage()" class="px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-all flex items-center gap-1.5 border border-slate-200">
+                    <i class="fa-solid fa-globe text-blue-600"></i> <span id="lang-btn-text">EN / FR</span>
+                </button>
+                <div class="hidden md:block">
+                    <a href="#contact" class="px-5 py-2.5 rounded-xl bg-blue-600 text-white font-semibold text-sm shadow-lg shadow-blue-500/20 hover:bg-blue-700 transition-all" data-fr="Me contacter" data-en="Contact Me">
+                        Me contacter
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -71,19 +77,19 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100/80 text-blue-700 font-semibold text-xs tracking-wide uppercase">
-                        <i class="fa-solid fa-graduation-cap"></i> Master Gestion et Stratégie du Sport - Université de Lille
+                        <i class="fa-solid fa-graduation-cap"></i> <span data-fr="Master Gestion et Stratégie du Sport - Université de Lille" data-en="Master's in Sport Management & Strategy - University of Lille">Master Gestion et Stratégie du Sport - Université de Lille</span>
                     </div>
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                        Piloter la performance et dynamiser le <span class="text-blue-600">sport de demain</span>.
+                        <span data-fr="Piloter la performance et dynamiser le" data-en="Driving performance and energizing">Piloter la performance et dynamiser le</span> <span class="text-blue-600" data-fr="sport de demain" data-en="tomorrow's sport">sport de demain</span>.
                     </h1>
-                    <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0">
+                    <p class="text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0" data-fr="Alternant chargé de développement chez Aquaspot (Récréa) et président engagé. J'allie analyse stratégique, gestion de projets sportifs et dynamisme de terrain pour valoriser les structures et les événements sportifs." data-en="Apprentice Development Officer at Aquaspot (Récréa) and dedicated association president. I combine strategic analysis, sports project management, and field dynamics to enhance sports structures and events.">
                         Alternant chargé de développement chez Aquaspot (Récréa) et président engagé. J'allie analyse stratégique, gestion de projets sportifs et dynamisme de terrain pour valoriser les structures et les événements sportifs.
                     </p>
                     <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
                         <a href="#experiences" class="px-6 py-3.5 rounded-xl bg-blue-600 text-white font-semibold shadow-lg shadow-blue-500/25 hover:bg-blue-700 transition-all flex items-center gap-2">
-                            Voir mes expériences <i class="fa-solid fa-arrow-right text-xs"></i>
+                            <span data-fr="Voir mes expériences" data-en="View my experience">Voir mes expériences</span> <i class="fa-solid fa-arrow-right text-xs"></i>
                         </a>
-                        <a href="#contact" class="px-6 py-3.5 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold hover:bg-slate-100 transition-all">
+                        <a href="#contact" class="px-6 py-3.5 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold hover:bg-slate-100 transition-all" data-fr="Me contacter" data-en="Contact me">
                             Me contacter
                         </a>
                     </div>
@@ -103,19 +109,19 @@
 
                     <!-- Carte En bref -->
                     <div class="w-full max-w-md bg-white p-6 rounded-3xl shadow-xl border border-slate-100">
-                        <h3 class="font-bold text-lg text-slate-900 mb-3 text-center">En bref</h3>
+                        <h3 class="font-bold text-lg text-slate-900 mb-3 text-center" data-fr="En bref" data-en="At a Glance">En bref</h3>
                         <ul class="space-y-2.5 text-sm text-slate-600">
                             <li class="flex items-center gap-3">
-                                <i class="fa-solid fa-circle-check text-blue-600"></i> Alternant chargé de développement (Aquaspot, Récréa) en Master Gestion et Stratégie du Sport à l'Université de Lille
+                                <i class="fa-solid fa-circle-check text-blue-600"></i> <span data-fr="Alternant chargé de développement (Aquaspot, Récréa) en Master Gestion et Stratégie du Sport à l'Université de Lille" data-en="Apprentice Development Officer (Aquaspot, Récréa) in Master's in Sport Management & Strategy at the University of Lille">Alternant chargé de développement (Aquaspot, Récréa) en Master Gestion et Stratégie du Sport à l'Université de Lille</span>
                             </li>
                             <li class="flex items-center gap-3">
-                                <i class="fa-solid fa-circle-check text-blue-600"></i> Président - Mille Pattes Annoeullinois
+                                <i class="fa-solid fa-circle-check text-blue-600"></i> <span data-fr="Président - Mille Pattes Annoeullinois" data-en="President - Mille Pattes Annoeullinois">Président - Mille Pattes Annoeullinois</span>
                             </li>
                             <li class="flex items-center gap-3">
-                                <i class="fa-solid fa-circle-check text-blue-600"></i> Diplômé d'une Licence STAPS mention Management du Sport à l'Université de Lille
+                                <i class="fa-solid fa-circle-check text-blue-600"></i> <span data-fr="Diplômé d'une Licence STAPS mention Management du Sport à l'Université de Lille" data-en="Graduate with a STAPS Bachelor's in Sport Management from the University of Lille">Diplômé d'une Licence STAPS mention Management du Sport à l'Université de Lille</span>
                             </li>
                             <li class="flex items-center gap-3">
-                                <i class="fa-solid fa-circle-check text-blue-600"></i> Titulaire de la Carte Pro Éducateur Sportif
+                                <i class="fa-solid fa-circle-check text-blue-600"></i> <span data-fr="Titulaire de la Carte Pro Éducateur Sportif" data-en="Holder of the Professional Sports Educator Card">Titulaire de la Carte Pro Éducateur Sportif</span>
                             </li>
                         </ul>
                     </div>
@@ -128,74 +134,74 @@
     <section id="experiences" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Expériences Professionnelles</h2>
-                <p class="text-slate-600">Mon parcours en entreprise, en structure sportive et dans l'animation.</p>
+                <h2 class="text-3xl font-extrabold text-slate-900 mb-4" data-fr="Expériences Professionnelles" data-en="Professional Experience">Expériences Professionnelles</h2>
+                <p class="text-slate-600" data-fr="Mon parcours en entreprise, en structure sportive et dans l'animation." data-en="My background in companies, sports structures, and community animation.">Mon parcours en entreprise, en structure sportive et dans l'animation.</p>
             </div>
             
             <div class="space-y-8">
                 <!-- Exp 1 -->
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                        <h3 class="font-bold text-lg text-slate-900">Chargé de Développement (Alternance & Stage)</h3>
-                        <span class="text-xs font-semibold px-3 py-1 bg-blue-100 text-blue-700 rounded-full w-max mt-1 sm:mt-0">Avr. 2026 - Aujourd'hui</span>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Chargé de Développement (Alternance & Stage)" data-en="Development Officer (Apprenticeship & Internship)">Chargé de Développement (Alternance & Stage)</h3>
+                        <span class="text-xs font-semibold px-3 py-1 bg-blue-100 text-blue-700 rounded-full w-max mt-1 sm:mt-0" data-fr="Avr. 2026 - Aujourd'hui" data-en="Apr. 2026 - Present">Avr. 2026 - Aujourd'hui</span>
                     </div>
                     <p class="text-sm font-medium text-blue-600 mb-3">Aquaspot / Récréa - Carvin, Hauts-de-France</p>
                     <ul class="list-disc list-inside text-sm text-slate-600 space-y-1">
-                        <li>Accompagner la stratégie de développement et la décliner en plans d'action opérationnels.</li>
-                        <li>Mettre en œuvre le projet de la structure en mobilisant les outils dédiés (marketing, RH, droit, comptabilité...).</li>
-                        <li>Promouvoir l'identité de la structure sportive dans son environnement.</li>
-                        <li>Évaluer l'efficacité des plans d'action et les ajuster au regard des pratiques émergentes, des innovations et de la dynamique du marché.</li>
+                        <li data-fr="Accompagner la stratégie de développement et la décliner en plans d'action opérationnels." data-en="Supporting the development strategy and translating it into operational action plans.">Accompagner la stratégie de développement et la décliner en plans d'action opérationnels.</li>
+                        <li data-fr="Mettre en œuvre le projet de la structure en mobilisant les outils dédiés (marketing, RH, droit, comptabilité...)." data-en="Implementing the structure's project by mobilizing dedicated tools (marketing, HR, law, accounting...).">Mettre en œuvre le projet de la structure en mobilisant les outils dédiés (marketing, RH, droit, comptabilité...).</li>
+                        <li data-fr="Promouvoir l'identité de la structure sportive dans son environnement." data-en="Promoting the identity of the sports structure within its environment.">Promouvoir l'identité de la structure sportive dans son environnement.</li>
+                        <li data-fr="Évaluer l'efficacité des plans d'action et les ajuster au regard des pratiques émergentes, des innovations et de la dynamique du marché." data-en="Evaluating the effectiveness of action plans and adjusting them in light of emerging practices, innovations, and market dynamics.">Évaluer l'efficacité des plans d'action et les ajuster au regard des pratiques émergentes, des innovations et de la dynamique du marché.</li>
                     </ul>
                 </div>
 
                 <!-- Exp 2 -->
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                        <h3 class="font-bold text-lg text-slate-900">Animateur Polyvalent</h3>
-                        <span class="text-xs font-semibold px-3 py-1 bg-slate-200 text-slate-700 rounded-full w-max mt-1 sm:mt-0">Janv. 2023 - Avr. 2026 (3 ans 4 mois)</span>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Animateur Polyvalent" data-en="Multipurpose Animator">Animateur Polyvalent</h3>
+                        <span class="text-xs font-semibold px-3 py-1 bg-slate-200 text-slate-700 rounded-full w-max mt-1 sm:mt-0" data-fr="Janv. 2023 - Avr. 2026 (3 ans 4 mois)" data-en="Jan. 2023 - Apr. 2026 (3 yrs 4 mos)">Janv. 2023 - Avr. 2026 (3 ans 4 mois)</span>
                     </div>
                     <p class="text-sm font-medium text-blue-600 mb-3">Pâte à Fêtes - Villeneuve-d'Ascq</p>
-                    <p class="text-sm text-slate-600 mb-2">Dynamisation de la tribune famille du LOSC durant les soirs de match : accueil des familles, encadrement d'activités ludiques et création d'une ambiance festive et conviviale.</p>
+                    <p class="text-sm text-slate-600 mb-2" data-fr="Dynamisation de la tribune famille du LOSC durant les soirs de match : accueil des familles, encadrement d'activités ludiques et création d'une ambiance festive et conviviale." data-en="Energizing the LOSC family stand on match nights: welcoming families, supervising fun activities, and creating a festive, friendly atmosphere.">Dynamisation de la tribune famille du LOSC durant les soirs de match : accueil des familles, encadrement d'activités ludiques et création d'une ambiance festive et conviviale.</p>
                 </div>
 
                 <!-- Exp 3 -->
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                        <h3 class="font-bold text-lg text-slate-900">Assistant Coordinateur Relation Client et Hygiène (Stage)</h3>
-                        <span class="text-xs font-semibold px-3 py-1 bg-slate-200 text-slate-700 rounded-full w-max mt-1 sm:mt-0">Avr. 2025 (1 mois)</span>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Assistant Coordinateur Relation Client et Hygiène (Stage)" data-en="Assistant Client Relations & Hygiene Coordinator (Internship)">Assistant Coordinateur Relation Client et Hygiène (Stage)</h3>
+                        <span class="text-xs font-semibold px-3 py-1 bg-slate-200 text-slate-700 rounded-full w-max mt-1 sm:mt-0" data-fr="Avr. 2025 (1 mois)" data-en="Apr. 2025 (1 month)">Avr. 2025 (1 mois)</span>
                     </div>
                     <p class="text-sm font-medium text-blue-600 mb-3">Récréa - Carvin</p>
-                    <p class="text-sm text-slate-600">Découverte et compréhension du mode de gestion en DSP (Délégation de Service Public), pilotage d'un établissement sport/loisir, compréhension des enjeux d'un plan d'animations annuel et participation au développement commercial.</p>
+                    <p class="text-sm text-slate-600" data-fr="Découverte et compréhension du mode de gestion en DSP (Délégation de Service Public), pilotage d'un établissement sport/loisir, compréhension des enjeux d'un plan d'animations annuel et participation au développement commercial." data-en="Discovery and understanding of Public Service Delegation (DSP) management models, operating a sports/leisure facility, understanding annual animation plan challenges, and participating in commercial development.">Découverte et compréhension du mode de gestion en DSP (Délégation de Service Public), pilotage d'un établissement sport/loisir, compréhension des enjeux d'un plan d'animations annuel et participation au développement commercial.</p>
                 </div>
 
                 <!-- Exp 4 -->
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                        <h3 class="font-bold text-lg text-slate-900">Assistant Directeur Sportif (Stage)</h3>
-                        <span class="text-xs font-semibold px-3 py-1 bg-slate-200 text-slate-700 rounded-full w-max mt-1 sm:mt-0">Déc. 2024 (1 mois)</span>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Assistant Directeur Sportif (Stage)" data-en="Assistant Sports Director (Internship)">Assistant Directeur Sportif (Stage)</h3>
+                        <span class="text-xs font-semibold px-3 py-1 bg-slate-200 text-slate-700 rounded-full w-max mt-1 sm:mt-0" data-fr="Déc. 2024 (1 mois)" data-en="Dec. 2024 (1 month)">Déc. 2024 (1 mois)</span>
                     </div>
                     <p class="text-sm font-medium text-blue-600 mb-3">Tennis Club de Gondecourt</p>
-                    <p class="text-sm text-slate-600">Organisation logistique des entraînements et des matchs, suivi administratif et gestion des licences, analyse sportive et suivi des performances.</p>
+                    <p class="text-sm text-slate-600" data-fr="Organisation logistique des entraînements et des matchs, suivi administratif et gestion des licences, analyse sportive et suivi des performances." data-en="Logistical organization of training sessions and matches, administrative monitoring, license management, sports analysis, and performance tracking.">Organisation logistique des entraînements et des matchs, suivi administratif et gestion des licences, analyse sportive et suivi des performances.</p>
                 </div>
 
                 <!-- Exp 5 -->
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                        <h3 class="font-bold text-lg text-slate-900">Animateur (CDD récurrents)</h3>
-                        <span class="text-xs font-semibold px-3 py-1 bg-slate-200 text-slate-700 rounded-full w-max mt-1 sm:mt-0">Épisodes estivaux (2020 - 2024)</span>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Animateur (CDD récurrents)" data-en="Animator (Recurring Fixed-Term Contracts)">Animateur (CDD récurrents)</h3>
+                        <span class="text-xs font-semibold px-3 py-1 bg-slate-200 text-slate-700 rounded-full w-max mt-1 sm:mt-0" data-fr="Épisodes estivaux (2020 - 2024)" data-en="Summer periods (2020 - 2024)">Épisodes estivaux (2020 - 2024)</span>
                     </div>
-                    <p class="text-sm font-medium text-blue-600 mb-3">Ville d'Annoeullin</p>
-                    <p class="text-sm text-slate-600">Création et animation d'activités adaptées à différents publics (enfants, adolescents, adultes). Organisation de jeux, ateliers et événements favorisant la cohésion, l'expression et la créativité dans un cadre sécurisant et convivial.</p>
+                    <p class="text-sm font-medium text-blue-600 mb-3" data-fr="Ville d'Annoeullin" data-en="City of Annoeullin">Ville d'Annoeullin</p>
+                    <p class="text-sm text-slate-600" data-fr="Création et animation d'activités adaptées à différents publics (enfants, adolescents, adultes). Organisation de jeux, ateliers et événements favorisant la cohésion, l'expression et la créativité dans un cadre sécurisant et convivial." data-en="Creation and facilitation of activities tailored to various audiences (children, teenagers, adults). Organization of games, workshops, and events fostering cohesion, expression, and creativity in a safe, friendly environment.">Création et animation d'activités adaptées à différents publics (enfants, adolescents, adultes). Organisation de jeux, ateliers et événements favorisant la cohésion, l'expression et la créativité dans un cadre sécurisant et convivial.</p>
                 </div>
 
                 <!-- Exp 6 -->
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                        <h3 class="font-bold text-lg text-slate-900">Équipier Polyvalent</h3>
-                        <span class="text-xs font-semibold px-3 py-1 bg-slate-200 text-slate-700 rounded-full w-max mt-1 sm:mt-0">Mai 2022 - Août 2022 (4 mois)</span>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Équipier Polyvalent" data-en="Multipurpose Crew Member">Équipier Polyvalent</h3>
+                        <span class="text-xs font-semibold px-3 py-1 bg-slate-200 text-slate-700 rounded-full w-max mt-1 sm:mt-0" data-fr="Mai 2022 - Août 2022 (4 mois)" data-en="May 2022 - Aug. 2022 (4 months)">Mai 2022 - Août 2022 (4 mois)</span>
                     </div>
                     <p class="text-sm font-medium text-blue-600 mb-3">McDonald's - Carvin</p>
-                    <p class="text-sm text-slate-600">Gestion du flux client en période de forte affluence, préparation des produits, service en salle et application rigoureuse des normes d'hygiène et de sécurité alimentaire.</p>
+                    <p class="text-sm text-slate-600" data-fr="Gestion du flux client en période de forte affluence, préparation des produits, service en salle et application rigoureuse des normes d'hygiène et de sécurité alimentaire." data-en="Managing customer flow during peak periods, product preparation, dining room service, and rigorous application of hygiene and food safety standards.">Gestion du flux client en période de forte affluence, préparation des produits, service en salle et application rigoureuse des normes d'hygiène et de sécurité alimentaire.</p>
                 </div>
             </div>
         </div>
@@ -205,66 +211,66 @@
     <section id="diplomes" class="py-20 bg-slate-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Diplômes & Certifications</h2>
-                <p class="text-slate-600">Mon cursus académique universitaire et mes qualifications professionnelles.</p>
+                <h2 class="text-3xl font-extrabold text-slate-900 mb-4" data-fr="Diplômes & Certifications" data-en="Education & Certifications">Diplômes & Certifications</h2>
+                <p class="text-slate-600" data-fr="Mon cursus académique universitaire et mes qualifications professionnelles." data-en="My academic university curriculum and professional qualifications.">Mon cursus académique universitaire et mes qualifications professionnelles.</p>
             </div>
             
             <div class="space-y-8">
                 <!-- Dip 1 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 border-l-4 border-l-blue-600">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                        <h3 class="font-bold text-lg text-slate-900">Master Gestion et Stratégie du Sport</h3>
-                        <span class="text-xs font-semibold px-3 py-1 bg-blue-50 text-blue-600 rounded-full w-max mt-1 sm:mt-0">Août 2026 - Juin 2028</span>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Master Gestion et Stratégie du Sport" data-en="Master's in Sport Management & Strategy">Master Gestion et Stratégie du Sport</h3>
+                        <span class="text-xs font-semibold px-3 py-1 bg-blue-50 text-blue-600 rounded-full w-max mt-1 sm:mt-0" data-fr="Août 2026 - Juin 2028" data-en="Aug. 2026 - June 2028">Août 2026 - Juin 2028</span>
                     </div>
-                    <p class="text-sm font-medium text-blue-600 mb-3">Université de Lille</p>
-                    <p class="text-sm text-slate-600 mb-2">Formation avancée en management, gouvernance des structures sportives, analyse financière et élaboration de stratégies de développement.</p>
+                    <p class="text-sm font-medium text-blue-600 mb-3" data-fr="Université de Lille" data-en="University of Lille">Université de Lille</p>
+                    <p class="text-sm text-slate-600 mb-2" data-fr="Formation avancée en management, gouvernance des structures sportives, analyse financière et élaboration de stratégies de développement." data-en="Advanced training in management, governance of sports structures, financial analysis, and development strategy formulation.">Formation avancée en management, gouvernance des structures sportives, analyse financière et élaboration de stratégies de développement.</p>
                 </div>
 
                 <!-- Dip 2 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                        <h3 class="font-bold text-lg text-slate-900">Licence STAPS - Parcours Management du Sport</h3>
-                        <span class="text-xs font-semibold px-3 py-1 bg-slate-100 text-slate-700 rounded-full w-max mt-1 sm:mt-0">Sept. 2022 - Juin 2026</span>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Licence STAPS - Parcours Management du Sport" data-en="STAPS Bachelor's - Sport Management Track">Licence STAPS - Parcours Management du Sport</h3>
+                        <span class="text-xs font-semibold px-3 py-1 bg-slate-100 text-slate-700 rounded-full w-max mt-1 sm:mt-0" data-fr="Sept. 2022 - Juin 2026" data-en="Sept. 2022 - June 2026">Sept. 2022 - Juin 2026</span>
                     </div>
-                    <p class="text-sm font-medium text-blue-600 mb-3">Université de Lille (Niveau : Mention Assez Bien)</p>
-                    <p class="text-sm text-slate-600">Acquisition des fondamentaux en gestion de projet, communication, droit du sport et sciences économiques appliquées au secteur sportif.</p>
+                    <p class="text-sm font-medium text-blue-600 mb-3" data-fr="Université de Lille (Niveau : Mention Assez Bien)" data-en="University of Lille (Level: Upper Second Class Honors)">Université de Lille (Niveau : Mention Assez Bien)</p>
+                    <p class="text-sm text-slate-600" data-fr="Acquisition des fondamentaux en gestion de projet, communication, droit du sport et sciences économiques appliquées au secteur sportif." data-en="Acquisition of fundamentals in project management, communication, sports law, and economic sciences applied to the sports sector.">Acquisition des fondamentaux en gestion de projet, communication, droit du sport et sciences économiques appliquées au secteur sportif.</p>
                 </div>
 
                 <!-- Dip 3 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                        <h3 class="font-bold text-lg text-slate-900">Diplôme d'Études Universitaires Générales (DEUG) STAPS</h3>
-                        <span class="text-xs font-semibold px-3 py-1 bg-slate-100 text-slate-700 rounded-full w-max mt-1 sm:mt-0">Sept. 2022 - Juin 2025</span>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Diplôme d'Études Universitaires Générales (DEUG) STAPS" data-en="DEUG STAPS (Undergraduate University Diploma)">Diplôme d'Études Universitaires Générales (DEUG) STAPS</h3>
+                        <span class="text-xs font-semibold px-3 py-1 bg-slate-100 text-slate-700 rounded-full w-max mt-1 sm:mt-0" data-fr="Sept. 2022 - Juin 2025" data-en="Sept. 2022 - June 2025">Sept. 2022 - Juin 2025</span>
                     </div>
-                    <p class="text-sm font-medium text-blue-600 mb-3">Université de Lille (Mention Assez Bien)</p>
+                    <p class="text-sm font-medium text-blue-600 mb-3" data-fr="Université de Lille (Mention Assez Bien)" data-en="University of Lille (Upper Second Class Honors)">Université de Lille (Mention Assez Bien)</p>
                 </div>
 
                 <!-- Cert 1 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-2">
-                        <h3 class="font-bold text-lg text-slate-900">Carte Professionnelle d'Éducateur Sportif</h3>
-                        <span class="text-xs font-semibold px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full w-max mt-1 sm:mt-0">Émise en juil. 2025</span>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Carte Professionnelle d'Éducateur Sportif" data-en="Professional Sports Educator Card">Carte Professionnelle d'Éducateur Sportif</h3>
+                        <span class="text-xs font-semibold px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full w-max mt-1 sm:mt-0" data-fr="Émise en juil. 2025" data-en="Issued July 2025">Émise en juil. 2025</span>
                     </div>
-                    <p class="text-sm font-medium text-blue-600 mb-3">Ministère des Sports, de la Jeunesse et de la Vie associative</p>
+                    <p class="text-sm font-medium text-blue-600 mb-3" data-fr="Ministère des Sports, de la Jeunesse et de la Vie associative" data-en="Ministry of Sports, Youth, and Community Life">Ministère des Sports, de la Jeunesse et de la Vie associative</p>
                 </div>
 
                 <!-- Certs grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div class="bg-white p-5 rounded-xl border border-slate-200">
                         <h4 class="font-bold text-slate-900 text-sm mb-1">BAFA</h4>
-                        <p class="text-xs text-slate-500">Hauts-de-France - Juin 2020</p>
+                        <p class="text-xs text-slate-500" data-fr="Hauts-de-France - Juin 2020" data-en="Hauts-de-France - June 2020">Hauts-de-France - Juin 2020</p>
                     </div>
                     <div class="bg-white p-5 rounded-xl border border-slate-200">
-                        <h4 class="font-bold text-slate-900 text-sm mb-1">Formation Arbitre</h4>
-                        <p class="text-xs text-slate-500">District des Flandres - Sept. 2021</p>
+                        <h4 class="font-bold text-slate-900 text-sm mb-1" data-fr="Formation Arbitre" data-en="Referee Training">Formation Arbitre</h4>
+                        <p class="text-xs text-slate-500" data-fr="District des Flandres - Sept. 2021" data-en="Flanders District - Sept. 2021">District des Flandres - Sept. 2021</p>
                     </div>
                     <div class="bg-white p-5 rounded-xl border border-slate-200">
                         <h4 class="font-bold text-slate-900 text-sm mb-1">PSC1</h4>
-                        <p class="text-xs text-slate-500">Académie de Lille - Juin 2017</p>
+                        <p class="text-xs text-slate-500" data-fr="Académie de Lille - Juin 2017" data-en="Academy of Lille - June 2017">Académie de Lille - Juin 2017</p>
                     </div>
                     <div class="bg-white p-5 rounded-xl border border-slate-200">
-                        <h4 class="font-bold text-slate-900 text-sm mb-1">Pix & Permis B</h4>
-                        <p class="text-xs text-slate-500">Certif. numérique (2025) & Permis (2021)</p>
+                        <h4 class="font-bold text-slate-900 text-sm mb-1" data-fr="Pix & Permis B" data-en="Pix & Driver's License">Pix & Permis B</h4>
+                        <p class="text-xs text-slate-500" data-fr="Certif. numérique (2025) & Permis (2021)" data-en="Digital cert. (2025) & License (2021)">Certif. numérique (2025) & Permis (2021)</p>
                     </div>
                 </div>
             </div>
@@ -275,8 +281,8 @@
     <section id="engagement" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Engagement & Bénévolat Sportif</h2>
-                <p class="text-slate-600">Une implication de terrain active au cœur des grands événements et de la vie associative locale.</p>
+                <h2 class="text-3xl font-extrabold text-slate-900 mb-4" data-fr="Engagement & Bénévolat Sportif" data-en="Sports Involvement & Volunteering">Engagement & Bénévolat Sportif</h2>
+                <p class="text-slate-600" data-fr="Une implication de terrain active au cœur des grands événements et de la vie associative locale." data-en="Active field involvement at the heart of major events and local community life.">Une implication de terrain active au cœur des grands événements et de la vie associative locale.</p>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -285,9 +291,9 @@
                         <i class="fa-solid fa-handshake-angle"></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900">Président - Mille Pattes Annoeullinois</h3>
-                        <p class="text-sm text-slate-500 mb-2">Depuis sept. 2025</p>
-                        <p class="text-sm text-slate-600">Restructuration stratégique et opérationnelle, animation de la communauté de coureurs et gestion de projet.</p>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Président - Mille Pattes Annoeullinois" data-en="President - Mille Pattes Annoeullinois">Président - Mille Pattes Annoeullinois</h3>
+                        <p class="text-sm text-slate-500 mb-2" data-fr="Depuis sept. 2025" data-en="Since Sept. 2025">Depuis sept. 2025</p>
+                        <p class="text-sm text-slate-600" data-fr="Restructuration stratégique et opérationnelle, animation de la communauté de coureurs et gestion de projet." data-en="Strategic and operational restructuring, runner community facilitation, and project management.">Restructuration stratégique et opérationnelle, animation de la communauté de coureurs et gestion de projet.</p>
                     </div>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
@@ -295,9 +301,9 @@
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900">Contrôleur Qualité de la Sécurité - LOSC</h3>
-                        <p class="text-sm text-slate-500 mb-2">Oct. 2025 - Nov. 2025</p>
-                        <p class="text-sm text-slate-600">Missions de contrôle qualité et de sécurité (Client Mystère) sur les accès au stade et au niveau 0.</p>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Contrôleur Qualité de la Sécurité - LOSC" data-en="Security Quality Controller - LOSC">Contrôleur Qualité de la Sécurité - LOSC</h3>
+                        <p class="text-sm text-slate-500 mb-2" data-fr="Oct. 2025 - Nov. 2025" data-en="Oct. 2025 - Nov. 2025">Oct. 2025 - Nov. 2025</p>
+                        <p class="text-sm text-slate-600" data-fr="Missions de contrôle qualité et de sécurité (Client Mystère) sur les accès au stade et au niveau 0." data-en="Quality and safety control missions (Mystery Shopper) on stadium accesses and level 0.">Missions de contrôle qualité et de sécurité (Client Mystère) sur les accès au stade et au niveau 0.</p>
                     </div>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
@@ -305,9 +311,9 @@
                         <i class="fa-solid fa-person-running"></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900">Signaleur & Bénévole Événementiel</h3>
-                        <p class="text-sm text-slate-500 mb-2">Ville d'Annoeullin, Perche en Or, FFSE, CHU de Lille</p>
-                        <p class="text-sm text-slate-600">Gestion de zones stratégiques, orientation des coureurs, sécurité et montage de villages événementiels.</p>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Signaleur & Bénévole Événementiel" data-en="Marshal & Event Volunteer">Signaleur & Bénévole Événementiel</h3>
+                        <p class="text-sm text-slate-500 mb-2" data-fr="Ville d'Annoeullin, Perche en Or, FFSE, CHU de Lille" data-en="City of Annoeullin, Perche en Or, FFSE, CHU of Lille">Ville d'Annoeullin, Perche en Or, FFSE, CHU de Lille</p>
+                        <p class="text-sm text-slate-600" data-fr="Gestion de zones stratégiques, orientation des coureurs, sécurité et montage de villages événementiels." data-en="Strategic zone management, runner guidance, safety, and event village setup.">Gestion de zones stratégiques, orientation des coureurs, sécurité et montage de villages événementiels.</p>
                     </div>
                 </div>
                 <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 flex items-start gap-4">
@@ -315,9 +321,9 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div>
-                        <h3 class="font-bold text-lg text-slate-900">Animateur Polyvalent Tribune Famille - LOSC</h3>
-                        <p class="text-sm text-slate-500 mb-2">Pâte à Fêtes (2023 - 2026)</p>
-                        <p class="text-sm text-slate-600">Animation des soirs de match, encadrement d'activités ludiques et gestion des flux de supporters.</p>
+                        <h3 class="font-bold text-lg text-slate-900" data-fr="Animateur Polyvalent Tribune Famille - LOSC" data-en="Multipurpose Family Stand Animator - LOSC">Animateur Polyvalent Tribune Famille - LOSC</h3>
+                        <p class="text-sm text-slate-500 mb-2" data-fr="Pâte à Fêtes (2023 - 2026)" data-en="Pâte à Fêtes (2023 - 2026)">Pâte à Fêtes (2023 - 2026)</p>
+                        <p class="text-sm text-slate-600" data-fr="Animation des soirs de match, encadrement d'activités ludiques et gestion des flux de supporters." data-en="Match night animation, supervision of fun activities, and supporter flow management.">Animation des soirs de match, encadrement d'activités ludiques et gestion des flux de supporters.</p>
                     </div>
                 </div>
             </div>
@@ -328,44 +334,44 @@
     <section id="competences" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Compétences</h2>
-                <p class="text-slate-600">Une vision globale associant expertises techniques (Hard Skills) et savoir-être (Soft Skills).</p>
+                <h2 class="text-3xl font-extrabold text-slate-900 mb-4" data-fr="Compétences" data-en="Skills">Compétences</h2>
+                <p class="text-slate-600" data-fr="Une vision globale associant expertises techniques (Hard Skills) et savoir-être (Soft Skills)." data-en="A global vision combining technical expertise (Hard Skills) and interpersonal skills (Soft Skills).">Une vision globale associant expertises techniques (Hard Skills) et savoir-être (Soft Skills).</p>
             </div>
 
             <!-- HARD SKILLS -->
             <div class="mb-16">
                 <h3 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
                     <span class="w-10 h-10 rounded-xl bg-blue-100 text-blue-600 flex items-center justify-center text-lg"><i class="fa-solid fa-gears"></i></span>
-                    Hard Skills (Compétences techniques)
+                    <span data-fr="Hard Skills (Compétences techniques)" data-en="Hard Skills (Technical Skills)">Hard Skills (Compétences techniques)</span>
                 </h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <div class="p-6 rounded-2xl bg-white border border-slate-200 text-center shadow-sm">
                         <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">
                             <i class="fa-solid fa-chart-line"></i>
                         </div>
-                        <h4 class="font-bold text-slate-900 mb-2">Gestion & Stratégie</h4>
-                        <p class="text-xs text-slate-600">Plans d'action opérationnels, pilotage de structures, analyse de marché (DSP) et gestion administrative.</p>
+                        <h4 class="font-bold text-slate-900 mb-2" data-fr="Gestion & Stratégie" data-en="Management & Strategy">Gestion & Stratégie</h4>
+                        <p class="text-xs text-slate-600" data-fr="Plans d'action opérationnels, pilotage de structures, analyse de marché (DSP) et gestion administrative." data-en="Operational action plans, structure piloting, market analysis (DSP), and administrative management.">Plans d'action opérationnels, pilotage de structures, analyse de marché (DSP) et gestion administrative.</p>
                     </div>
                     <div class="p-6 rounded-2xl bg-white border border-slate-200 text-center shadow-sm">
                         <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">
                             <i class="fa-solid fa-calendar-days"></i>
                         </div>
-                        <h4 class="font-bold text-slate-900 mb-2">Événementiel Sportif</h4>
-                        <p class="text-xs text-slate-600">Organisation logistique, gestion de la sécurité, coordination de bénévoles et montage de villages événementiels.</p>
+                        <h4 class="font-bold text-slate-900 mb-2" data-fr="Événementiel Sportif" data-en="Sports Events">Événementiel Sportif</h4>
+                        <p class="text-xs text-slate-600" data-fr="Organisation logistique, gestion de la sécurité, coordination de bénévoles et montage de villages événementiels." data-en="Logistical organization, security management, volunteer coordination, and event village setup.">Organisation logistique, gestion de la sécurité, coordination de bénévoles et montage de villages événementiels.</p>
                     </div>
                     <div class="p-6 rounded-2xl bg-white border border-slate-200 text-center shadow-sm">
                         <div class="w-12 h-12 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">
                             <i class="fa-solid fa-users"></i>
                         </div>
-                        <h4 class="font-bold text-slate-900 mb-2">Management & CRM</h4>
-                        <p class="text-xs text-slate-600">Gestion de la relation client, encadrement d'équipes et animation de groupes de tous âges.</p>
+                        <h4 class="font-bold text-slate-900 mb-2" data-fr="Management & CRM" data-en="Management & CRM">Management & CRM</h4>
+                        <p class="text-xs text-slate-600" data-fr="Gestion de la relation client, encadrement d'équipes et animation de groupes de tous âges." data-en="Customer relationship management, team supervision, and group animation for all ages.">Gestion de la relation client, encadrement d'équipes et animation de groupes de tous âges.</p>
                     </div>
                     <div class="p-6 rounded-2xl bg-white border border-slate-200 text-center shadow-sm">
                         <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4 text-xl">
                             <i class="fa-solid fa-award"></i>
                         </div>
-                        <h4 class="font-bold text-slate-900 mb-2">Diplômes & Certifs</h4>
-                        <p class="text-xs text-slate-600">Carte Pro Éducateur Sportif, BAFA, PSC1, Permis B, Arbitre District des Flandres, Pix.</p>
+                        <h4 class="font-bold text-slate-900 mb-2" data-fr="Diplômes & Certifs" data-en="Diplomas & Certs">Diplômes & Certifs</h4>
+                        <p class="text-xs text-slate-600" data-fr="Carte Pro Éducateur Sportif, BAFA, PSC1, Permis B, Arbitre District des Flandres, Pix." data-en="Professional Sports Educator Card, BAFA, PSC1, Driver's License, Flanders District Referee, Pix.">Carte Pro Éducateur Sportif, BAFA, PSC1, Permis B, Arbitre District des Flandres, Pix.</p>
                     </div>
                 </div>
             </div>
@@ -374,7 +380,7 @@
             <div>
                 <h3 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3">
                     <span class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg"><i class="fa-solid fa-brain"></i></span>
-                    Soft Skills (Savoir-être & Compétences relationnelles)
+                    <span data-fr="Soft Skills (Savoir-être & Compétences relationnelles)" data-en="Soft Skills (Interpersonal & Behavioral Skills)">Soft Skills (Savoir-être & Compétences relationnelles)</span>
                 </h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
@@ -382,8 +388,8 @@
                             <i class="fa-solid fa-arrows-split-up-and-left"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-slate-900 mb-1">Capacité d'adaptation</h4>
-                            <p class="text-xs text-slate-600">Flexibilité face à la variation des flux de publics et aux imprévus de terrain en milieu sportif.</p>
+                            <h4 class="font-bold text-slate-900 mb-1" data-fr="Capacité d'adaptation" data-en="Adaptability">Capacité d'adaptation</h4>
+                            <p class="text-xs text-slate-600" data-fr="Flexibilité face à la variation des flux de publics et aux imprévus de terrain en milieu sportif." data-en="Flexibility in response to varying public flows and field unforeseen events in a sports environment.">Flexibilité face à la variation des flux de publics et aux imprévus de terrain en milieu sportif.</p>
                         </div>
                     </div>
                     <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
@@ -391,8 +397,8 @@
                             <i class="fa-solid fa-clipboard-list"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-slate-900 mb-1">Sens de l'organisation</h4>
-                            <p class="text-xs text-slate-600">Rigueur administrative, planification logistique et gestion rigoureuse des plannings et des tâches.</p>
+                            <h4 class="font-bold text-slate-900 mb-1" data-fr="Sens de l'organisation" data-en="Organizational Skills">Sens de l'organisation</h4>
+                            <p class="text-xs text-slate-600" data-fr="Rigueur administrative, planification logistique et gestion rigoureuse des plannings et des tâches." data-en="Administrative rigor, logistical planning, and rigorous schedule and task management.">Rigueur administrative, planification logistique et gestion rigoureuse des plannings et des tâches.</p>
                         </div>
                     </div>
                     <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
@@ -400,8 +406,8 @@
                             <i class="fa-solid fa-people-arrows"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-slate-900 mb-1">Travail en équipe</h4>
-                            <p class="text-xs text-slate-600">Esprit collaboratif fort, entraide et cohésion développées au sein des structures associatives et professionnelles.</p>
+                            <h4 class="font-bold text-slate-900 mb-1" data-fr="Travail en équipe" data-en="Teamwork">Travail en équipe</h4>
+                            <p class="text-xs text-slate-600" data-fr="Esprit collaboratif fort, entraide et cohésion développées au sein des structures associatives et professionnelles." data-en="Strong collaborative spirit, mutual aid, and cohesion developed within associative and professional structures.">Esprit collaboratif fort, entraide et cohésion développées au sein des structures associatives et professionnelles.</p>
                         </div>
                     </div>
                     <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
@@ -409,8 +415,8 @@
                             <i class="fa-solid fa-comments"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-slate-900 mb-1">Communication & Pédagogie</h4>
-                            <p class="text-xs text-slate-600">Transmission claire des consignes, écoute active des adhérents et aisance relationnelle tous publics.</p>
+                            <h4 class="font-bold text-slate-900 mb-1" data-fr="Communication & Pédagogie" data-en="Communication & Pedagogy">Communication & Pédagogie</h4>
+                            <p class="text-xs text-slate-600" data-fr="Transmission claire des consignes, écoute active des adhérents et aisance relationnelle tous publics." data-en="Clear transmission of instructions, active listening to members, and relational ease with all audiences.">Transmission claire des consignes, écoute active des adhérents et aisance relationnelle tous publics.</p>
                         </div>
                     </div>
                     <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
@@ -418,8 +424,8 @@
                             <i class="fa-solid fa-bolt"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-slate-900 mb-1">Réactivité</h4>
-                            <p class="text-xs text-slate-600">Prise de décision rapide et efficace en période de forte affluence ou de gestion de crise.</p>
+                            <h4 class="font-bold text-slate-900 mb-1" data-fr="Réactivité" data-en="Responsiveness">Réactivité</h4>
+                            <p class="text-xs text-slate-600" data-fr="Prise de décision rapide et efficace en période de forte affluence ou de gestion de crise." data-en="Quick and effective decision-making during high traffic periods or crisis management.">Prise de décision rapide et efficace en période de forte affluence ou de gestion de crise.</p>
                         </div>
                     </div>
                     <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
@@ -427,8 +433,8 @@
                             <i class="fa-solid fa-seedling"></i>
                         </div>
                         <div>
-                            <h4 class="font-bold text-slate-900 mb-1">Créativité & Engagement</h4>
-                            <p class="text-xs text-slate-600">Force de proposition pour dynamiser les projets associatifs et concevoir des animations engageantes.</p>
+                            <h4 class="font-bold text-slate-900 mb-1" data-fr="Créativité & Engagement" data-en="Creativity & Commitment">Créativité & Engagement</h4>
+                            <p class="text-xs text-slate-600" data-fr="Force de proposition pour dynamiser les projets associatifs et concevoir des animations engageantes." data-en="Proactive force to energize associative projects and design engaging activities.">Force de proposition pour dynamiser les projets associatifs et concevoir des animations engageantes.</p>
                         </div>
                     </div>
                 </div>
@@ -436,102 +442,179 @@
         </div>
     </section>
 
-    <!-- SECTION PHOTOTHÈQUE & GALERIE (IMAGES ENTIÈRES) -->
+    <!-- SECTION PHOTOTHÈQUE & GALERIE (AVEC HOVER TOOLTIP & NOUVELLES IMAGES) -->
     <section id="phototheque" class="py-20 bg-white border-t border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Photothèque & Galerie</h2>
-                <p class="text-slate-600">Retrouvez l'ensemble des retours visuels de mes actions associatives, événements sportifs, missions au stade et cursus académique.</p>
+                <h2 class="text-3xl font-extrabold text-slate-900 mb-4" data-fr="Photothèque & Galerie" data-en="Gallery & Phototheque">Photothèque & Galerie</h2>
+                <p class="text-slate-600" data-fr="Retrouvez l'ensemble des retours visuels de mes actions associatives, événements sportifs, missions au stade et cursus académique. (Survolez les images pour afficher les descriptions)" data-en="Explore visual highlights of my community actions, sporting events, stadium missions, and academic curriculum. (Hover over images to view descriptions)">Retrouvez l'ensemble des retours visuels de mes actions associatives, événements sportifs, missions au stade et cursus académique. (Survolez les images pour afficher les descriptions)</p>
             </div>
             
             <div class="space-y-12">
                 <!-- 1. Master -->
                 <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-blue-600"></i> Cursus Académique</h3>
-                    <div class="max-w-xl mx-auto overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2">
-                        <img src="https://lh3.googleusercontent.com/d/1lVXdpWAj2EsU1WxPDSc7ER5BDMM9etRp" alt="Promo Master" class="w-full h-auto max-h-[500px] object-contain rounded-xl mx-auto">
-                        <div class="p-3 text-center text-xs font-semibold text-slate-600">Promotion Master Gestion et Stratégie du Sport (Université de Lille)</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-graduation-cap text-blue-600"></i> <span data-fr="Cursus Académique" data-en="Academic Curriculum">Cursus Académique</span></h3>
+                    <div class="max-w-xl mx-auto relative group overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2">
+                        <img src="https://lh3.googleusercontent.com/d/1lVXdpWAj2EsU1WxPDSc7ER5BDMM9etRp" alt="Promo Master" class="w-full h-auto max-h-[500px] object-contain rounded-xl mx-auto transition-transform duration-500 group-hover:scale-105">
+                        <!-- Tooltip Hover Overlay -->
+                        <div class="absolute inset-0 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6 text-center text-white rounded-2xl">
+                            <p class="text-sm font-medium" data-fr="Promotion Master Gestion et Stratégie du Sport (Université de Lille) : Consolidation des expertises en management, gouvernance et stratégie financière." data-en="Master's in Sport Management & Strategy cohort (University of Lille): Consolidation of expertise in management, governance, and financial strategy.">Promotion Master Gestion et Stratégie du Sport (Université de Lille) : Consolidation des expertises en management, gouvernance et stratégie financière.</p>
+                        </div>
+                        <div class="p-3 text-center text-xs font-semibold text-slate-600" data-fr="Promotion Master Gestion et Stratégie du Sport (Université de Lille)" data-en="Master's in Sport Management & Strategy cohort (University of Lille)">Promotion Master Gestion et Stratégie du Sport (Université de Lille)</div>
                     </div>
                 </div>
 
                 <!-- 2. Bénévolat événements -->
                 <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-person-running text-blue-600"></i> Bénévolat & Événements Sportifs</h3>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-person-running text-blue-600"></i> <span data-fr="Bénévolat & Événements Sportifs" data-en="Volunteering & Sporting Events">Bénévolat & Événements Sportifs</span></h3>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div class="overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
-                            <img src="https://lh3.googleusercontent.com/d/1hkUnn9EgZ54dWjUvL5Ca7Pj3bKff0AG7" alt="Perche en Or" class="w-full h-64 object-contain rounded-xl mx-auto">
-                            <div class="p-3 text-center text-xs font-semibold text-slate-600">Perche en Or - Logistique & Installation</div>
+                        <!-- Perche en Or -->
+                        <div class="relative group overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <img src="https://lh3.googleusercontent.com/d/1hkUnn9EgZ54dWjUvL5Ca7Pj3bKff0AG7" alt="Perche en Or" class="w-full h-64 object-contain mx-auto transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center text-white rounded-xl">
+                                    <p class="text-xs font-medium" data-fr="Perche en Or : Implication active dans la logistique, l'installation technique et l'accueil des athlètes internationaux." data-en="Perche en Or: Active involvement in logistics, technical setup, and welcoming international athletes.">Perche en Or : Implication active dans la logistique, l'installation technique et l'accueil des athlètes internationaux.</p>
+                                </div>
+                            </div>
+                            <div class="p-3 text-center text-xs font-semibold text-slate-600" data-fr="Perche en Or - Logistique & Installation" data-en="Perche en Or - Logistics & Setup">Perche en Or - Logistique & Installation</div>
                         </div>
-                        <div class="overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
-                            <img src="https://lh3.googleusercontent.com/d/18bUwjYWVCYBrkCcj6oSo5dlQlTN4B08k" alt="Color Run" class="w-full h-64 object-contain rounded-xl mx-auto">
-                            <div class="p-3 text-center text-xs font-semibold text-slate-600">Color Run - Signaleur & Sécurité</div>
+                        <!-- Color Run -->
+                        <div class="relative group overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <img src="https://lh3.googleusercontent.com/d/18bUwjYWVCYBrkCcj6oSo5dlQlTN4B08k" alt="Color Run" class="w-full h-64 object-contain mx-auto transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center text-white rounded-xl">
+                                    <p class="text-xs font-medium" data-fr="Color Run : Gestion des postes de signalisation, sécurisation des parcours et animation festive aux côtés des participants." data-en="Color Run: Managing marshal posts, course safety, and festive animation alongside participants.">Color Run : Gestion des postes de signalisation, sécurisation des parcours et animation festive aux côtés des participants.</p>
+                                </div>
+                            </div>
+                            <div class="p-3 text-center text-xs font-semibold text-slate-600" data-fr="Color Run - Signaleur & Sécurité" data-en="Color Run - Marshal & Safety">Color Run - Signaleur & Sécurité</div>
                         </div>
-                        <div class="overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
-                            <img src="https://lh3.googleusercontent.com/d/1jBz-AdCMkbw8scWEnskK23nDEAQIXs0a" alt="Course de la diversité" class="w-full h-64 object-contain rounded-xl mx-auto">
-                            <div class="p-3 text-center text-xs font-semibold text-slate-600">Course de la diversité - Encadrement</div>
+                        <!-- Course de la diversité -->
+                        <div class="relative group overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <img src="https://lh3.googleusercontent.com/d/1jBz-AdCMkbw8scWEnskK23nDEAQIXs0a" alt="Course de la diversité" class="w-full h-64 object-contain mx-auto transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center text-white rounded-xl">
+                                    <p class="text-xs font-medium" data-fr="Course de la diversité : Encadrement des flux et promotion de l'inclusion par le sport." data-en="Diversity Run: Flow supervision and promotion of inclusion through sports.">Course de la diversité : Encadrement des flux et promotion de l'inclusion par le sport.</p>
+                                </div>
+                            </div>
+                            <div class="p-3 text-center text-xs font-semibold text-slate-600" data-fr="Course de la diversité - Encadrement" data-en="Diversity Run - Supervision">Course de la diversité - Encadrement</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 3. LOSC -->
+                <!-- 3. Missions Professionnelles & Job Dating / Afterwork -->
                 <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-shield-halved text-blue-600"></i> Missions au LOSC / Stade Pierre Mauroy</h3>
-                    <div class="max-w-xl mx-auto overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2">
-                        <img src="https://lh3.googleusercontent.com/d/1uy8WH9AYMK4JmoCvw4bzkngXAedrFn2j" alt="Mission LOSC" class="w-full h-auto max-h-[500px] object-contain rounded-xl mx-auto">
-                        <div class="p-3 text-center text-xs font-semibold text-slate-600">Contrôle qualité et sécurité - Stade Pierre Mauroy</div>
-                    </div>
-                </div>
-
-                <!-- 4. Mille Pattes Annoeullinois -->
-                <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-handshake-angle text-blue-600"></i> Mille Pattes Annoeullinois (Réunions & Projets)</h3>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-briefcase text-blue-600"></i> <span data-fr="Réseau professionnel & Événements (Performéo, France Travail)" data-en="Professional Network & Events (Performéo, France Travail)">Réseau professionnel & Événements (Performéo, France Travail)</span></h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2">
-                            <img src="https://lh3.googleusercontent.com/d/11fRFakn1Es5LurNEvY1Qudvqlg578_2i" alt="Réunion 1" class="w-full h-72 object-contain rounded-xl mx-auto">
-                            <div class="p-3 text-center text-xs font-semibold text-slate-600">Présentation du projet associatif</div>
+                        <!-- Performeo -->
+                        <div class="relative group overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <img src="https://lh3.googleusercontent.com/d/15gI5Hc19XABJpbFN4bFX5I2NfkY2aPK9" alt="Job Dating Performeo" class="w-full h-72 object-contain mx-auto transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center text-white rounded-xl">
+                                    <p class="text-xs font-medium" data-fr="Job Dating PERFORMEO : Rencontres professionnelles dédiées aux profils BNSSA et BPJEPS AAN pour dynamiser l'emploi dans les structures aquatiques." data-en="PERFORMEO Job Dating: Professional networking dedicated to BNSSA and BPJEPS AAN profiles to boost employment in aquatic facilities.">Job Dating PERFORMEO : Rencontres professionnelles dédiées aux profils BNSSA et BPJEPS AAN pour dynamiser l'emploi dans les structures aquatiques.</p>
+                                </div>
+                            </div>
+                            <div class="p-3 text-center text-xs font-semibold text-slate-600" data-fr="Job Dating BNSSA & BPJEPS AAN - Performéo" data-en="BNSSA & BPJEPS AAN Job Dating - Performéo">Job Dating BNSSA & BPJEPS AAN - Performéo</div>
                         </div>
-                        <div class="overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2">
-                            <img src="https://lh3.googleusercontent.com/d/1W5aFC0oyVUrhgcWoNax-fjFPdjCtV8H3" alt="Réunion 2" class="w-full h-72 object-contain rounded-xl mx-auto">
-                            <div class="p-3 text-center text-xs font-semibold text-slate-600">Échanges et dynamique de groupe</div>
+                        <!-- France Travail -->
+                        <div class="relative group overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <img src="https://lh3.googleusercontent.com/d/1Uj1T4h1txK4olSK1MvWMy0LrJBdjjpXl" alt="Afterwork France Travail" class="w-full h-72 object-contain mx-auto transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center text-white rounded-xl">
+                                    <p class="text-xs font-medium" data-fr="Afterwork France Travail : Échange stratégique pour fixer le cap de l'emploi sportif 2026 et préparer l'horizon 2027." data-en="France Travail Afterwork: Strategic exchange to set the course for sports employment in 2026 and prepare for the 2027 horizon.">Afterwork France Travail : Échange stratégique pour fixer le cap de l'emploi sportif 2026 et préparer l'horizon 2027.</p>
+                                </div>
+                            </div>
+                            <div class="p-3 text-center text-xs font-semibold text-slate-600" data-fr="Afterwork France Travail - Cap 2026 & Horizon 2027" data-en="France Travail Afterwork - 2026 Course & 2027 Horizon">Afterwork France Travail - Cap 2026 & Horizon 2027</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 5. Presse & Partenariat avec Boutons d'accès direct -->
+                <!-- 4. LOSC -->
                 <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-newspaper text-blue-600"></i> Revue de Presse & Partenariats</h3>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-shield-halved text-blue-600"></i> <span data-fr="Missions au LOSC / Stade Pierre Mauroy" data-en="LOSC / Stade Pierre Mauroy Missions">Missions au LOSC / Stade Pierre Mauroy</span></h3>
+                    <div class="max-w-xl mx-auto relative group overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2">
+                        <img src="https://lh3.googleusercontent.com/d/1uy8WH9AYMK4JmoCvw4bzkngXAedrFn2j" alt="Mission LOSC" class="w-full h-auto max-h-[500px] object-contain rounded-xl mx-auto transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-6 text-center text-white rounded-2xl">
+                            <p class="text-sm font-medium" data-fr="Stade Pierre Mauroy : Mission de contrôle qualité et de sécurisation des flux de supporters en collaboration avec le staff du LOSC." data-en="Stade Pierre Mauroy: Quality control mission and supporter flow security in collaboration with the LOSC staff.">Stade Pierre Mauroy : Mission de contrôle qualité et de sécurisation des flux de supporters en collaboration avec le staff du LOSC.</p>
+                        </div>
+                        <div class="p-3 text-center text-xs font-semibold text-slate-600" data-fr="Contrôle qualité et sécurité - Stade Pierre Mauroy" data-en="Quality & Safety Control - Stade Pierre Mauroy">Contrôle qualité et sécurité - Stade Pierre Mauroy</div>
+                    </div>
+                </div>
+
+                <!-- 5. Mille Pattes Annoeullinois -->
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-handshake-angle text-blue-600"></i> <span data-fr="Mille Pattes Annoeullinois (Réunions & Projets)" data-en="Mille Pattes Annoeullinois (Meetings & Projects)">Mille Pattes Annoeullinois (Réunions & Projets)</span></h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="relative group overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <img src="https://lh3.googleusercontent.com/d/11fRFakn1Es5LurNEvY1Qudvqlg578_2i" alt="Réunion 1" class="w-full h-72 object-contain mx-auto transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center text-white rounded-xl">
+                                    <p class="text-xs font-medium" data-fr="Présentation officielle du projet associatif et des axes de développement de la saison." data-en="Official presentation of the associative project and seasonal development axes.">Présentation officielle du projet associatif et des axes de développement de la saison.</p>
+                                </div>
+                            </div>
+                            <div class="p-3 text-center text-xs font-semibold text-slate-600" data-fr="Présentation du projet associatif" data-en="Presentation of the associative project">Présentation du projet associatif</div>
+                        </div>
+                        <div class="relative group overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2">
+                            <div class="relative overflow-hidden rounded-xl">
+                                <img src="https://lh3.googleusercontent.com/d/1W5aFC0oyVUrhgcWoNax-fjFPdjCtV8H3" alt="Réunion 2" class="w-full h-72 object-contain mx-auto transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center text-white rounded-xl">
+                                    <p class="text-xs font-medium" data-fr="Échanges constructifs et dynamique de groupe avec les membres et partenaires du club." data-en="Constructive exchanges and group dynamics with club members and partners.">Échanges constructifs et dynamique de groupe avec les membres et partenaires du club.</p>
+                                </div>
+                            </div>
+                            <div class="p-3 text-center text-xs font-semibold text-slate-600" data-fr="Échanges et dynamique de groupe" data-en="Exchanges and group dynamics">Échanges et dynamique de groupe</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Presse & Partenariat avec Boutons d'accès direct -->
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-newspaper text-blue-600"></i> <span data-fr="Revue de Presse & Partenariats" data-en="Press Review & Partnerships">Revue de Presse & Partenariats</span></h3>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <!-- Article 1 -->
-                        <div class="overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
+                        <div class="relative group overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
                             <div>
-                                <img src="https://lh3.googleusercontent.com/d/1CWDpgaFD1BBpOv42oiF2NG3ozap010i7" alt="Presse 1" class="w-full h-56 object-contain rounded-xl mx-auto">
-                                <div class="p-2 text-center text-xs font-semibold text-slate-600">Article 1 - Le renouveau du club</div>
+                                <div class="relative overflow-hidden rounded-xl">
+                                    <img src="https://lh3.googleusercontent.com/d/1CWDpgaFD1BBpOv42oiF2NG3ozap010i7" alt="Presse 1" class="w-full h-56 object-contain mx-auto transition-transform duration-500 group-hover:scale-105">
+                                    <div class="absolute inset-0 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-3 text-center text-white rounded-xl">
+                                        <p class="text-xs font-medium" data-fr="La Voix du Nord : Article sur le renouveau et la redynamisation du club de course à pied." data-en="La Voix du Nord: Article on the renewal and revitalisation of the running club.">La Voix du Nord : Article sur le renouveau et la redynamisation du club de course à pied.</p>
+                                    </div>
+                                </div>
+                                <div class="p-2 text-center text-xs font-semibold text-slate-600" data-fr="Article 1 - Le renouveau du club" data-en="Article 1 - Club Renewal">Article 1 - Le renouveau du club</div>
                             </div>
                             <div class="p-2 pt-0 text-center">
                                 <a href="https://www.lavoixdunord.fr/1669850/article/2026-01-29/le-club-de-course-les-mille-pattes-annoeullinois-renait-et-veut-battre-le-pave" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-600 text-white font-semibold text-xs rounded-xl shadow hover:bg-blue-700 transition-all">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Lire l'article
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> <span data-fr="Lire l'article" data-en="Read article">Lire l'article</span>
                                 </a>
                             </div>
                         </div>
                         <!-- Article 2 -->
-                        <div class="overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
+                        <div class="relative group overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
                             <div>
-                                <img src="https://lh3.googleusercontent.com/d/1utMEL-FXXRyd13MxMZfWqpGrquPXGVkQ" alt="Presse 2" class="w-full h-56 object-contain rounded-xl mx-auto">
-                                <div class="p-2 text-center text-xs font-semibold text-slate-600">Article 2 - Sept mois après</div>
+                                <div class="relative overflow-hidden rounded-xl">
+                                    <img src="https://lh3.googleusercontent.com/d/1utMEL-FXXRyd13MxMZfWqpGrquPXGVkQ" alt="Presse 2" class="w-full h-56 object-contain mx-auto transition-transform duration-500 group-hover:scale-105">
+                                    <div class="absolute inset-0 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-3 text-center text-white rounded-xl">
+                                        <p class="text-xs font-medium" data-fr="La Voix du Nord : Bilan à sept mois et perspectives d'évolution de l'association." data-en="La Voix du Nord: Seven-month review and association development prospects.">La Voix du Nord : Bilan à sept mois et perspectives d'évolution de l'association.</p>
+                                    </div>
+                                </div>
+                                <div class="p-2 text-center text-xs font-semibold text-slate-600" data-fr="Article 2 - Sept mois après" data-en="Article 2 - Seven months later">Article 2 - Sept mois après</div>
                             </div>
                             <div class="p-2 pt-0 text-center">
                                 <a href="https://www.lavoixdunord.fr/1721026/article/2026-07-12/sept-mois-apres-son-renouveau-l-association-mille-pattes-annoeullinois-avance" target="_blank" class="inline-flex items-center gap-1.5 px-4 py-2 bg-blue-600 text-white font-semibold text-xs rounded-xl shadow hover:bg-blue-700 transition-all">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Lire l'article
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> <span data-fr="Lire l'article" data-en="Read article">Lire l'article</span>
                                 </a>
                             </div>
                         </div>
                         <!-- Partenariat -->
-                        <div class="overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
+                        <div class="relative group overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
                             <div>
-                                <img src="https://lh3.googleusercontent.com/d/1qA9BV-UZ-b0tRsTFDMnAxW5hbHgiQsPF" alt="Partenariat" class="w-full h-56 object-contain rounded-xl mx-auto">
-                                <div class="p-2 text-center text-xs font-semibold text-slate-600">Partenariat officiel - Abrinor</div>
+                                <div class="relative overflow-hidden rounded-xl">
+                                    <img src="https://lh3.googleusercontent.com/d/1qA9BV-UZ-b0tRsTFDMnAxW5hbHgiQsPF" alt="Partenariat" class="w-full h-56 object-contain mx-auto transition-transform duration-500 group-hover:scale-105">
+                                    <div class="absolute inset-0 bg-slate-900/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-3 text-center text-white rounded-xl">
+                                        <p class="text-xs font-medium" data-fr="Partenariat officiel avec l'agence immobilière Abrinor pour soutenir les actions locales." data-en="Official partnership with Abrinor real estate agency to support local actions.">Partenariat officiel avec l'agence immobilière Abrinor pour soutenir les actions locales.</p>
+                                    </div>
+                                </div>
+                                <div class="p-2 text-center text-xs font-semibold text-slate-600" data-fr="Partenariat officiel - Abrinor" data-en="Official Partnership - Abrinor">Partenariat officiel - Abrinor</div>
                             </div>
-                            <div class="p-2 text-center text-xs font-medium text-slate-400">Partenariat local</div>
+                            <div class="p-2 text-center text-xs font-medium text-slate-400" data-fr="Partenariat local" data-en="Local partnership">Partenariat local</div>
                         </div>
                     </div>
                 </div>
@@ -542,14 +625,14 @@
     <!-- CONTACT -->
     <section id="contact" class="py-20 bg-slate-50 border-t border-slate-200">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Me contacter</h2>
-            <p class="text-slate-600 mb-8">Un projet, une opportunité ou un échange autour du management sportif ? N'hésitez pas à me contacter.</p>
+            <h2 class="text-3xl font-extrabold text-slate-900 mb-4" data-fr="Me contacter" data-en="Contact Me">Me contacter</h2>
+            <p class="text-slate-600 mb-8" data-fr="Un projet, une opportunité ou un échange autour du management sportif ? N'hésitez pas à me contacter." data-en="A project, an opportunity, or a discussion around sports management? Feel free to contact me.">Un projet, une opportunité ou un échange autour du management sportif ? N'hésitez pas à me contacter.</p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href="https://www.linkedin.com/in/louismasse" target="_blank" class="px-6 py-3 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all flex items-center gap-2">
-                    <i class="fa-brands fa-linkedin text-lg"></i> Profil LinkedIn
+                    <i class="fa-brands fa-linkedin text-lg"></i> <span data-fr="Profil LinkedIn" data-en="LinkedIn Profile">Profil LinkedIn</span>
                 </a>
                 <a href="mailto:contact@louismasse.fr" class="px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold hover:bg-slate-100 transition-all flex items-center gap-2">
-                    <i class="fa-solid fa-envelope text-lg"></i> Envoyer un email
+                    <i class="fa-solid fa-envelope text-lg"></i> <span data-fr="Envoyer un email" data-en="Send an Email">Envoyer un email</span>
                 </a>
             </div>
         </div>
@@ -557,8 +640,28 @@
 
     <!-- FOOTER -->
     <footer class="bg-slate-900 text-slate-400 py-8 text-center text-sm">
-        <p>&copy; 2026 Louis Masse. Tous droits réservés. Conçu pour la gestion et la stratégie du sport.</p>
+        <p data-fr="&copy; 2026 Louis Masse. Tous droits réservés. Conçu pour la gestion et la stratégie du sport." data-en="&copy; 2026 Louis Masse. All rights reserved. Designed for sport management and strategy.">&copy; 2026 Louis Masse. Tous droits réservés. Conçu pour la gestion et la stratégie du sport.</p>
     </footer>
+
+    <!-- SCRIPT DE BASCULE DE LANGUE FR / EN -->
+    <script>
+        let currentLang = 'fr';
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            const elements = document.querySelectorAll('[data-fr]');
+            
+            elements.forEach(el => {
+                const text = el.getAttribute(`data-${currentLang}`);
+                if (text) {
+                    el.innerHTML = text;
+                }
+            });
+
+            document.getElementById('lang-btn-text').innerText = currentLang === 'fr' ? 'EN / FR' : 'FR / EN';
+            document.documentElement.setAttribute('lang', currentLang);
+        }
+    </script>
 
 </body>
 </html>
