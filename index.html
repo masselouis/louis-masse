@@ -35,7 +35,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-accent selection:text-white">
 
-    <!-- HEADER / NAVIGATION -->
+    <!-- HEADER / NAVIGATION AVEC MENU DÉROULANT (BURGER) -->
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3">
@@ -48,7 +48,8 @@
                 </div>
             </a>
             
-            <nav class="hidden md:flex items-center gap-6 font-medium text-sm text-slate-600">
+            <!-- Navigation desktop -->
+            <nav class="hidden lg:flex items-center gap-6 font-medium text-sm text-slate-600">
                 <a href="#accueil" class="hover:text-blue-600 transition-colors" data-fr="Accueil" data-en="Home">Accueil</a>
                 <a href="#experiences" class="hover:text-blue-600 transition-colors" data-fr="Expériences" data-en="Experience">Expériences</a>
                 <a href="#diplomes" class="hover:text-blue-600 transition-colors" data-fr="Diplômes" data-en="Education">Diplômes</a>
@@ -65,13 +66,37 @@
                 </button>
                 <!-- Bouton CV Header -->
                 <a href="CV_Louis_Masse.pdf" download class="hidden sm:flex px-4 py-2.5 rounded-xl bg-slate-100 border border-slate-200 text-slate-700 font-semibold text-sm hover:bg-slate-200 transition-all items-center gap-2">
-                    <i class="fa-solid fa-file-arrow-down text-blue-600"></i> <span data-fr="Télécharger CV" data-en="Download Resume">Télécharger CV</span>
+                    <i class="fa-solid fa-file-arrow-down text-blue-600"></i> <span data-fr="CV" data-en="CV">CV</span>
                 </a>
                 <div class="hidden md:block">
                     <a href="#contact" class="px-5 py-2.5 rounded-xl bg-blue-600 text-white font-semibold text-sm shadow-lg shadow-blue-500/20 hover:bg-blue-700 transition-all" data-fr="Me contacter" data-en="Contact Me">
                         Me contacter
                     </a>
                 </div>
+
+                <!-- Bouton Menu Hamburger (Mobile / Tablettes) -->
+                <button onclick="toggleMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all border border-slate-200">
+                    <i class="fa-solid fa-bars text-lg" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Panneau du Menu Déroulant Mobile -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 shadow-xl transition-all">
+            <a href="#accueil" onclick="toggleMenu()" class="block font-medium text-sm text-slate-700 hover:text-blue-600 py-1.5" data-fr="Accueil" data-en="Home">Accueil</a>
+            <a href="#experiences" onclick="toggleMenu()" class="block font-medium text-sm text-slate-700 hover:text-blue-600 py-1.5" data-fr="Expériences" data-en="Experience">Expériences</a>
+            <a href="#diplomes" onclick="toggleMenu()" class="block font-medium text-sm text-slate-700 hover:text-blue-600 py-1.5" data-fr="Diplômes" data-en="Education">Diplômes</a>
+            <a href="#engagement" onclick="toggleMenu()" class="block font-medium text-sm text-slate-700 hover:text-blue-600 py-1.5" data-fr="Engagement" data-en="Involvement">Engagement</a>
+            <a href="#experience-sportive" onclick="toggleMenu()" class="block font-medium text-sm text-slate-700 hover:text-blue-600 py-1.5" data-fr="Parcours Sportif" data-en="Sports Journey">Parcours Sportif</a>
+            <a href="#competences" onclick="toggleMenu()" class="block font-medium text-sm text-slate-700 hover:text-blue-600 py-1.5" data-fr="Compétences" data-en="Skills">Compétences</a>
+            <a href="#phototheque" onclick="toggleMenu()" class="block font-medium text-sm text-slate-700 hover:text-blue-600 py-1.5" data-fr="Photothèque" data-en="Gallery">Photothèque</a>
+            <div class="pt-2 border-t border-slate-100 flex flex-col gap-2">
+                <a href="CV_Louis_Masse.pdf" download class="flex sm:hidden px-4 py-2.5 rounded-xl bg-slate-100 border border-slate-200 text-slate-700 font-semibold text-sm items-center justify-center gap-2">
+                    <i class="fa-solid fa-file-arrow-down text-blue-600"></i> <span data-fr="Télécharger CV" data-en="Download Resume">Télécharger CV</span>
+                </a>
+                <a href="#contact" onclick="toggleMenu()" class="w-full text-center px-5 py-2.5 rounded-xl bg-blue-600 text-white font-semibold text-sm shadow-md hover:bg-blue-700 transition-all" data-fr="Me contacter" data-en="Contact Me">
+                    Me contacter
+                </a>
             </div>
         </div>
     </header>
@@ -747,7 +772,7 @@
         <p data-fr="&copy; 2026 Louis Masse. Tous droits réservés. Conçu pour la gestion et la stratégie du sport." data-en="&copy; 2026 Louis Masse. All rights reserved. Designed for sport management and strategy.">&copy; 2026 Louis Masse. Tous droits réservés. Conçu pour la gestion et la stratégie du sport.</p>
     </footer>
 
-    <!-- SCRIPT DE BASCULE DE LANGUE FR / EN -->
+    <!-- SCRIPTS (TRADUCTION ET MENU DÉROULANT) -->
     <script>
         let currentLang = 'fr';
 
@@ -764,6 +789,19 @@
 
             document.getElementById('lang-btn-text').innerText = currentLang === 'fr' ? 'EN / FR' : 'FR / EN';
             document.documentElement.setAttribute('lang', currentLang);
+        }
+
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            }
         }
     </script>
 
