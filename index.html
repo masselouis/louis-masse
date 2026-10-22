@@ -35,7 +35,7 @@
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-accent selection:text-white">
 
-    <!-- HEADER / NAVIGATION AVEC MENU DÉROULANT (BURGER) -->
+    <!-- HEADER / NAVIGATION AVEC MENU DÉROULANT -->
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3">
@@ -47,17 +47,6 @@
                     <span class="block text-xs font-medium text-blue-600" data-fr="Gestion & Stratégie du Sport" data-en="Sport Management & Strategy">Gestion & Stratégie du Sport</span>
                 </div>
             </a>
-            
-            <!-- Navigation desktop -->
-            <nav class="hidden lg:flex items-center gap-6 font-medium text-sm text-slate-600">
-                <a href="#accueil" class="hover:text-blue-600 transition-colors" data-fr="Accueil" data-en="Home">Accueil</a>
-                <a href="#experiences" class="hover:text-blue-600 transition-colors" data-fr="Expériences" data-en="Experience">Expériences</a>
-                <a href="#diplomes" class="hover:text-blue-600 transition-colors" data-fr="Diplômes" data-en="Education">Diplômes</a>
-                <a href="#engagement" class="hover:text-blue-600 transition-colors" data-fr="Engagement" data-en="Involvement">Engagement</a>
-                <a href="#experience-sportive" class="hover:text-blue-600 transition-colors" data-fr="Parcours Sportif" data-en="Sports Journey">Parcours Sportif</a>
-                <a href="#competences" class="hover:text-blue-600 transition-colors" data-fr="Compétences" data-en="Skills">Compétences</a>
-                <a href="#phototheque" class="hover:text-blue-600 transition-colors" data-fr="Photothèque" data-en="Gallery">Photothèque</a>
-            </nav>
 
             <div class="flex items-center gap-3">
                 <!-- Bouton Traduction FR/EN -->
@@ -74,15 +63,15 @@
                     </a>
                 </div>
 
-                <!-- Bouton Menu Hamburger (Mobile / Tablettes) -->
-                <button onclick="toggleMenu()" class="lg:hidden p-2.5 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all border border-slate-200">
+                <!-- Bouton Menu Hamburger -->
+                <button onclick="toggleMenu()" class="p-2.5 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all border border-slate-200">
                     <i class="fa-solid fa-bars text-lg" id="menu-icon"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Panneau du Menu Déroulant Mobile -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 shadow-xl transition-all">
+        <!-- Panneau du Menu Déroulant -->
+        <div id="mobile-menu" class="hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3 shadow-xl transition-all">
             <a href="#accueil" onclick="toggleMenu()" class="block font-medium text-sm text-slate-700 hover:text-blue-600 py-1.5" data-fr="Accueil" data-en="Home">Accueil</a>
             <a href="#experiences" onclick="toggleMenu()" class="block font-medium text-sm text-slate-700 hover:text-blue-600 py-1.5" data-fr="Expériences" data-en="Experience">Expériences</a>
             <a href="#diplomes" onclick="toggleMenu()" class="block font-medium text-sm text-slate-700 hover:text-blue-600 py-1.5" data-fr="Diplômes" data-en="Education">Diplômes</a>
@@ -296,7 +285,7 @@
                     </div>
                     <div class="bg-white p-5 rounded-xl border border-slate-200">
                         <h4 class="font-bold text-slate-900 text-sm mb-1">PSC1</h4>
-                        <p class="text-xs text-slate-500" data-fr="Académie de Lille - Juin 2017" data-en="Academy of Lille - June 2017">Académie de Lille - Juin 2017</p>
+                        <p class="text-xs text-slate-500" data-fr="Académie de Lille - Juin 2017" data-en="Academy of Lille - June 2017">Académie de Lille - June 2017</p>
                     </div>
                     <div class="bg-white p-5 rounded-xl border border-slate-200">
                         <h4 class="font-bold text-slate-900 text-sm mb-1" data-fr="Pix & Permis B" data-en="Pix & Driver's License">Pix & Permis B</h4>
@@ -711,7 +700,7 @@
                     </div>
                 </div>
 
-                <!-- 7. SPORTOTHÈQUE -->
+                <!-- 7. SPORTOTHÈQUE (SANS SURVOL) -->
                 <div>
                     <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-medal text-blue-600"></i> <span data-fr="Sportothèque (Football & Arbitrage)" data-en="Sportotheque (Football & Refereeing)">Sportothèque (Football & Arbitrage)</span></h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
