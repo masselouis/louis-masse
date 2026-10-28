@@ -82,7 +82,7 @@
                 <div class="relative dropdown-container">
                     <button onclick="toggleDropdown(event)" class="px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold text-sm transition-all border border-slate-200 flex items-center gap-2">
                         <i class="fa-solid fa-bars text-blue-600"></i> 
-                        <span data-fr="Menu" data-en="Menu">Menu</span>
+                        <span data-fr="Sections" data-en="Sections">Sections</span>
                         <i class="fa-solid fa-chevron-down text-xs text-slate-400"></i>
                     </button>
 
@@ -718,8 +718,13 @@
 
                 <!-- 7. SPORTOTHÈQUE -->
                 <div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-medal text-blue-600"></i> <span data-fr="Sportothèque (Football & Arbitrage)" data-en="Sportotheque (Football & Refereeing)">Sportothèque (Football & Arbitrage)</span></h3>
+                    <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2"><i class="fa-solid fa-medal text-blue-600"></i> <span data-fr="Sportothèque (Football & Arbitrage & Course)" data-en="Sportotheque (Football & Refereeing & Running)">Sportothèque (Football & Arbitrage & Course)</span></h3>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Marathon de Lille (Nouvelle photo) -->
+                        <div class="overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
+                            <img src="https://lh3.googleusercontent.com/d/1SZVnl-M7trKuhizTR5tMrpskPH9f2KsS" alt="Marathon de Lille" class="w-full h-64 object-contain mx-auto">
+                            <div class="p-3 text-center text-xs font-semibold text-slate-600" data-fr="Participation au Marathon de Lille" data-en="Participation in the Lille Marathon">Participation au Marathon de Lille</div>
+                        </div>
                         <!-- Arbitre 1 -->
                         <div class="overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
                             <img src="https://lh3.googleusercontent.com/d/1jatEvO5X1XFufWqSbvkBAjOap3j2pzqj" alt="Arbitre 1" class="w-full h-64 object-contain mx-auto">
@@ -741,7 +746,7 @@
                             <div class="p-3 text-center text-xs font-semibold text-slate-600" data-fr="Parcours Foot - Compétition (2)" data-en="Football Journey - Competition (2)">Parcours Foot - Compétition (2)</div>
                         </div>
                         <!-- Foot 3 -->
-                        <div class="overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between md:col-span-2 lg:col-span-1">
+                        <div class="overflow-hidden rounded-2xl shadow-md border border-slate-200 bg-slate-900/5 p-2 flex flex-col justify-between">
                             <img src="https://lh3.googleusercontent.com/d/1I1JOh-ARkK_QFat_dM6sbXNQZLPZ9UUc" alt="Foot 3" class="w-full h-64 object-contain mx-auto">
                             <div class="p-3 text-center text-xs font-semibold text-slate-600" data-fr="Parcours Foot - Compétition (3)" data-en="Football Journey - Competition (3)">Parcours Foot - Compétition (3)</div>
                         </div>
@@ -785,6 +790,14 @@
             currentLang = currentLang === 'fr' ? 'en' : 'fr';
             const elements = document.querySelectorAll('[data-fr]');
             
+            elements.querySelectorAll ? elements.forEach(el => {
+                const text = el.getAttribute(`data-${currentLang}`);
+                if (text) {
+                    el.innerHTML = text;
+                }
+            }) : null;
+
+            // Sécurité alternative pour les boucles de nodes
             elements.forEach(el => {
                 const text = el.getAttribute(`data-${currentLang}`);
                 if (text) {
